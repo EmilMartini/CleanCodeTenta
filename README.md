@@ -1,5 +1,5 @@
 # Designpattern Motivering
-Jag valde mig att använda en egen "MovieClient" som hämtar data från båda api'erna och slår samman resultaten.
+Jag valde mig att använda en egen "MovieHttpClient" som hämtar data från båda api'erna och slår samman resultaten.
 För att undvika olika resultat och scenarion där flera HttpClients är uppe och snurrar med raceconditions och allt vad det innebär valde jag att skapa MovieClient som en Singleton. Detta möjliggör scenarion där eventuellt flera olika delar av applikationen vill hämta data samtidigt att få relevanta felmeddelanden, så som att klienten redan används. Även säkras scenariot där ett möjligt mottagar API endast tillåter en connection från samma API nyckel samtidigt.
 
 
