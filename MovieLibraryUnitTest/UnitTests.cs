@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 
 namespace MovieLibraryUnitTest
 {
@@ -65,6 +66,34 @@ namespace MovieLibraryUnitTest
                 Assert.AreEqual(expected[i].Title, actual[i].Title);
                 Assert.AreEqual(expected[i].Rated, actual[i].Rated);
             }
+        }
+
+        [TestMethod]
+        public void ParseTopp100JsonTest()
+        {
+            var logicHandler = new LogicHandler();
+            var testJson = "[{'title': 'The Shawshank Redemption', 'id': 'tt0111161', 'rated': '9,2'}]";
+            var expected = new Movie() { Id = "tt0111161", Title = "The Shawshank Redemption", Rated = 9.2 };
+
+            var actual = logicHandler.ParseTop100JsonToMovieObjects(testJson).Single();
+
+            Assert.AreEqual(expected.Id, actual.Id);
+            Assert.AreEqual(expected.Title, actual.Title); 
+            Assert.AreEqual(expected.Rated, actual.Rated);
+        }
+
+        [TestMethod]
+        public void ParseDetailedJsonTest()
+        {
+            var logicHandler = new LogicHandler();
+            var testJson = "[{'id': '1','title': 'Black Panther','year': '2018','genres': ['Action','Adventure','Sci-Fi'],'ratings': [4],'poster': 'MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SY500_CR0,0,337,500_AL_.jpg','contentRating': '15','duration': 'PT134M','releaseDate': '2018-02-14','averageRating': 0,'originalTitle': '','storyline': 'Some People Die','actors': ['Chadwick Boseman'],'imdbRating': 7.0,'posterurl': 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SY500_CR0,0,337,500_AL_.jpg'}]";
+            var expected = new Movie() { Id = "1", Title = "Black Panther", Rated = 7.0 };
+
+            var actual = logicHandler.ParseDetailedJsonToMovieObjects(testJson).Single();
+
+            Assert.AreEqual(expected.Id, actual.Id);
+            Assert.AreEqual(expected.Title, actual.Title);
+            Assert.AreEqual(expected.Rated, actual.Rated);
         }
 
         private List<Movie> GetTestMovies()

@@ -1,15 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MovieLibrary.Controllers
 {
-    
-
     [ApiController]
     [Route("[controller]")]
     public class MovieController
@@ -24,7 +18,7 @@ namespace MovieLibrary.Controllers
         [Route("/movies")]
         public IActionResult GetMovies([FromQuery]bool ascending)
         {      
-            var movies = MoviesClient.GetInstance().GetMovies();
+            var movies = MovieHttpClient.GetInstance().GetMovies();
             var sortedMovies = logicHandler.SortMovies(movies, ascending);
             if (sortedMovies.Any())
             {
@@ -39,8 +33,12 @@ namespace MovieLibrary.Controllers
         [Route("/movie/{id}")]
         public IActionResult GetMovieById(string id) 
         {
-            var movies = MoviesClient.GetInstance().GetMovies();
             Movie movieToReturn = null;
+            var movies = MovieHttpClient.GetInstance().GetMovies();
+            if (!movies.Any())
+            {
+                return new NoContentResult();
+            }
             try
             {
                 movieToReturn = logicHandler.GetSingleMovie(movies, id);
@@ -49,7 +47,7 @@ namespace MovieLibrary.Controllers
             {
                 if(ex is ArgumentNullException)
                 {
-                    return new BadRequestObjectResult("No movie with that Id");
+                    return new BadRequestObjectResult("No movie with that id");
                 }
             }
             return new OkObjectResult(movieToReturn);

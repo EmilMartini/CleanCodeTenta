@@ -46,7 +46,6 @@ namespace MovieLibrary
                     throw new ArgumentNullException();
                 }
             }
-
             return movies;
         }
 
@@ -78,7 +77,6 @@ namespace MovieLibrary
                     throw new ArgumentNullException();
                 }
             }
-
             return movies;
         }
 
