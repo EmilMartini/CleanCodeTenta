@@ -1,0 +1,502 @@
+[
+    {
+        "title": "The Shawshank Redemption",
+        "id": "tt0111161",
+        "rated": "9,2"
+    },
+    {
+        "title": "The Godfather",
+        "id": "tt0068646",
+        "rated": "9,1"
+    },
+    {
+        "title": "The Godfather: Part II",
+        "id": "tt0071562",
+        "rated": "9,0"
+    },
+    {
+        "title": "Pulp Fiction",
+        "id": "tt0110912",
+        "rated": "8,8"
+    },
+    {
+        "title": "The Good, the Bad and the Ugly",
+        "id": "tt0060196",
+        "rated": "8,8"
+    },
+    {
+        "title": "The Dark Knight",
+        "id": "tt0468569",
+        "rated": "9,0"
+    },
+    {
+        "title": "12 Angry Men",
+        "id": "tt0050083",
+        "rated": "9,2"
+    },
+    {
+        "title": "Schindler's List",
+        "id": "tt0108052",
+        "rated": "8,9"
+    },
+    {
+        "title": "The Lord of the Rings: The Return of the King",
+        "id": "tt0167260",
+        "rated": "8,8"
+    },
+    {
+        "title": "Fight Club",
+        "id": "tt0137523",
+        "rated": "8,8"
+    },
+    {
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "id": "tt0080684",
+        "rated": "8,7"
+    },
+    {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "id": "tt0120737",
+        "rated": "8,8"
+    },
+    {
+        "title": "One Flew Over the Cuckoo's Nest",
+        "id": "tt0073486",
+        "rated": "8,7"
+    },
+    {
+        "title": "Inception",
+        "id": "tt1375666",
+        "rated": "8,8"
+    },
+    {
+        "title": "Goodfellas",
+        "id": "tt0099685",
+        "rated": "8,7"
+    },
+    {
+        "title": "Star Wars",
+        "id": "tt0076759",
+        "rated": "8,6"
+    },
+    {
+        "title": "Seven Samurai",
+        "id": "tt0047478",
+        "rated": "8,6"
+    },
+    {
+        "title": "Forrest Gump",
+        "id": "tt0109830",
+        "rated": "8,8"
+    },
+    {
+        "title": "The Matrix",
+        "id": "tt0133093",
+        "rated": "8,7"
+    },
+    {
+        "title": "The Lord of the Rings: The Two Towers",
+        "id": "tt0167261",
+        "rated": "8,8"
+    },
+    {
+        "title": "City of God",
+        "id": "tt0317248",
+        "rated": "8,6"
+    },
+    {
+        "title": "Se7en",
+        "id": "tt0114369",
+        "rated": "8,6"
+    },
+    {
+        "title": "The Silence of the Lambs",
+        "id": "tt0102926",
+        "rated": "8,6"
+    },
+    {
+        "title": "Once Upon a Time in the West",
+        "id": "tt0064116",
+        "rated": "8,5"
+    },
+    {
+        "title": "Casablanca",
+        "id": "tt0034583",
+        "rated": "8,5"
+    },
+    {
+        "title": "The Usual Suspects",
+        "id": "tt0114814",
+        "rated": "8,5"
+    },
+    {
+        "title": "Raiders of the Lost Ark",
+        "id": "tt0082971",
+        "rated": "8,4"
+    },
+    {
+        "title": "Rear Window",
+        "id": "tt0047396",
+        "rated": "8,4"
+    },
+    {
+        "title": "It's a Wonderful Life",
+        "id": "tt0038650",
+        "rated": "8,6"
+    },
+    {
+        "title": "Psycho",
+        "id": "tt0054215",
+        "rated": "8,5"
+    },
+    {
+        "title": "Léon: The Professional",
+        "id": "tt0110413",
+        "rated": "8,4"
+    },
+    {
+        "title": "Sunset Blvd.",
+        "id": "tt0043014",
+        "rated": "8,4"
+    },
+    {
+        "title": "American History X",
+        "id": "tt0120586",
+        "rated": "8,5"
+    },
+    {
+        "title": "Apocalypse Now",
+        "id": "tt0078788",
+        "rated": "8,4"
+    },
+    {
+        "title": "Terminator 2: Judgment Day",
+        "id": "tt0103064",
+        "rated": "8,5"
+    },
+    {
+        "title": "Saving Private Ryan",
+        "id": "tt0120815",
+        "rated": "8,6"
+    },
+    {
+        "title": "Memento",
+        "id": "tt0209144",
+        "rated": "8,4"
+    },
+    {
+        "title": "City Lights",
+        "id": "tt0021749",
+        "rated": "8,5"
+    },
+    {
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "id": "tt0057012",
+        "rated": "8,4"
+    },
+    {
+        "title": "Alien",
+        "id": "tt0078748",
+        "rated": "8,4"
+    },
+    {
+        "title": "Modern Times",
+        "id": "tt0027977",
+        "rated": "8,5"
+    },
+    {
+        "title": "Spirited Away",
+        "id": "tt0245429",
+        "rated": "8,6"
+    },
+    {
+        "title": "North by Northwest",
+        "id": "tt0053125",
+        "rated": "8,3"
+    },
+    {
+        "title": "Back to the Future",
+        "id": "tt0088763",
+        "rated": "8,5"
+    },
+    {
+        "title": "Life Is Beautiful",
+        "id": "tt0118799",
+        "rated": "8,6"
+    },
+    {
+        "title": "The Shining",
+        "id": "tt0081505",
+        "rated": "8,4"
+    },
+    {
+        "title": "The Pianist",
+        "id": "tt0253474",
+        "rated": "8,5"
+    },
+    {
+        "title": "Citizen Kane",
+        "id": "tt0033467",
+        "rated": "8,3"
+    },
+    {
+        "title": "The Departed",
+        "id": "tt0407887",
+        "rated": "8,5"
+    },
+    {
+        "title": "M",
+        "id": "tt0022100",
+        "rated": "8,3"
+    },
+    {
+        "title": "Paths of Glory",
+        "id": "tt0050825",
+        "rated": "8,4"
+    },
+    {
+        "title": "Vertigo",
+        "id": "tt0052357",
+        "rated": "8,3"
+    },
+    {
+        "title": "Django Unchained",
+        "id": "tt1853728",
+        "rated": "8,4"
+    },
+    {
+        "title": "Double Indemnity",
+        "id": "tt0036775",
+        "rated": "8,3"
+    },
+    {
+        "title": "The Dark Knight Rises",
+        "id": "tt1345836",
+        "rated": "8,4"
+    },
+    {
+        "title": "Aliens",
+        "id": "tt0090605",
+        "rated": "8,3"
+    },
+    {
+        "title": "Taxi Driver",
+        "id": "tt0075314",
+        "rated": "8,3"
+    },
+    {
+        "title": "American Beauty",
+        "id": "tt0169547",
+        "rated": "8,3"
+    },
+    {
+        "title": "The Green Mile",
+        "id": "tt0120689",
+        "rated": "8,6"
+    },
+    {
+        "title": "Gladiator",
+        "id": "tt0172495",
+        "rated": "8,5"
+    },
+    {
+        "title": "The Intouchables",
+        "id": "tt1675434",
+        "rated": "8,5"
+    },
+    {
+        "title": "WALL·E",
+        "id": "tt0910970",
+        "rated": "8,4"
+    },
+    {
+        "title": "The Lives of Others",
+        "id": "tt0405094",
+        "rated": "8,4"
+    },
+    {
+        "title": "Toy Story 3",
+        "id": "tt0435761",
+        "rated": "8,2"
+    },
+    {
+        "title": "The Great Dictator",
+        "id": "tt0032553",
+        "rated": "8,4"
+    },
+    {
+        "title": "The Prestige",
+        "id": "tt0482571",
+        "rated": "8,5"
+    },
+    {
+        "title": "A Clockwork Orange",
+        "id": "tt0066921",
+        "rated": "8,3"
+    },
+    {
+        "title": "Lawrence of Arabia",
+        "id": "tt0056172",
+        "rated": "8,3"
+    },
+    {
+        "title": "Amélie",
+        "id": "tt0211915",
+        "rated": "8,3"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "id": "tt0056592",
+        "rated": "8,2"
+    },
+    {
+        "title": "Reservoir Dogs",
+        "id": "tt0105236",
+        "rated": "8,3"
+    },
+    {
+        "title": "Das Boot",
+        "id": "tt0082096",
+        "rated": "8,3"
+    },
+    {
+        "title": "The Lion King",
+        "id": "tt0110357",
+        "rated": "8,5"
+    },
+    {
+        "title": "Cinema Paradiso",
+        "id": "tt0095765",
+        "rated": "8,7"
+    },
+    {
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "id": "tt0086190",
+        "rated": "8,7"
+    },
+    {
+        "title": "The Treasure of the Sierra Madre",
+        "id": "tt0040897",
+        "rated": "8,2"
+    },
+    {
+        "title": "The Third Man",
+        "id": "tt0041959",
+        "rated": "8,1"
+    },
+    {
+        "title": "Once Upon a Time in America",
+        "id": "tt0087843",
+        "rated": "7,6"
+    },
+    {
+        "title": "Requiem for a Dream",
+        "id": "tt0180093",
+        "rated": "8,3"
+    },
+    {
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "id": "tt0338013",
+        "rated": "8,3"
+    },
+    {
+        "title": "Full Metal Jacket",
+        "id": "tt0093058",
+        "rated": "8,3"
+    },
+    {
+        "title": "Oldboy",
+        "id": "tt0364569",
+        "rated": "8,4"
+    },
+    {
+        "title": "Braveheart",
+        "id": "tt0112573",
+        "rated": "8,3"
+    },
+    {
+        "title": "L.A. Confidential",
+        "id": "tt0119488",
+        "rated": "8,2"
+    },
+    {
+        "title": "Bicycle Thieves",
+        "id": "tt0040522",
+        "rated": "8,3"
+    },
+    {
+        "title": "Chinatown",
+        "id": "tt0071315",
+        "rated": "8,1"
+    },
+    {
+        "title": "Singin' in the Rain",
+        "id": "tt0045152",
+        "rated": "8,3"
+    },
+    {
+        "title": "Princess Mononoke",
+        "id": "tt0119698",
+        "rated": "8,4"
+    },
+    {
+        "title": "Monty Python and the Holy Grail",
+        "id": "tt0071853",
+        "rated": "8,2"
+    },
+    {
+        "title": "Metropolis",
+        "id": "tt0017136",
+        "rated": "8,3"
+    },
+    {
+        "title": "Rashomon",
+        "id": "tt0042876",
+        "rated": "8,2"
+    },
+    {
+        "title": "Some Like It Hot",
+        "id": "tt0053291",
+        "rated": "8,2"
+    },
+    {
+        "title": "Amadeus",
+        "id": "tt0086879",
+        "rated": "8,3"
+    },
+    {
+        "title": "2001: A Space Odyssey",
+        "id": "tt0062622",
+        "rated": "8,3"
+    },
+    {
+        "title": "All About Eve",
+        "id": "tt0042192",
+        "rated": "8,2"
+    },
+    {
+        "title": "Witness for the Prosecution",
+        "id": "tt0051201",
+        "rated": "8,4"
+    },
+    {
+        "title": "The Sting",
+        "id": "tt0070735",
+        "rated": "8,3"
+    },
+    {
+        "title": "The Apartment",
+        "id": "tt0053604",
+        "rated": "8,3"
+    },
+    {
+        "title": "Grave of the Fireflies",
+        "id": "tt0095327",
+        "rated": "8,5"
+    },
+    {
+        "title": "Indiana Jones and the Last Crusade",
+        "id": "tt0097576",
+        "rated": "7,6"
+    }
+]

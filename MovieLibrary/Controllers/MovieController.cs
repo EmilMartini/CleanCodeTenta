@@ -8,54 +8,51 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MovieLibrary.Controllers
 {
-    public class Movie
-    {
-        public string id { get; set; }
-        public string title { get; set; }
-        public string rated { get; set; }
-    }
+    
 
     [ApiController]
     [Route("[controller]")]
     public class MovieController
     {
-        static HttpClient client = new HttpClient();
+        LogicHandler logicHandler;
+        public MovieController()
+        {
+            logicHandler = new LogicHandler();
+        }
 
         [HttpGet]
-        [Route("/toplist")]
-        public IEnumerable<string> Toplist(bool asc = true)
-        {
-            List<string> res = new List<string>();
-            var r = client.GetAsync("https://ithstenta2020.s3.eu-north-1.amazonaws.com/topp100.json").Result;
-            var ml = JsonSerializer.Deserialize<List<Movie>>(new StreamReader(r.Content.ReadAsStream()).ReadToEnd());
-            //Sort ml
-            if (asc)
+        [Route("/movies")]
+        public IActionResult GetMovies([FromQuery]bool ascending)
+        {      
+            var movies = MoviesClient.GetInstance().GetMovies();
+            var sortedMovies = logicHandler.SortMovies(movies, ascending);
+            if (sortedMovies.Any())
             {
-                ml.OrderBy(e => e.rated);
-            }
-            else
+                return new OkObjectResult(sortedMovies.Select(i => i.Title));
+            } else
             {
-                ml.OrderByDescending(e => e.rated);
+                return new NoContentResult();
             }
-            foreach (var m in ml) {
-                res.Add(m.title);
-            }
-            //result.Add(new StreamReader(response.Content.ReadAsStream()).ReadToEnd());
-            return res;
         }
         
         [HttpGet]
-        [Route("/movie")]
-        public Movie GetMovieById(string id) {
-            var r = client.GetAsync("https://ithstenta2020.s3.eu-north-1.amazonaws.com/topp100.json").Result;
-            var ml = JsonSerializer.Deserialize<List<Movie>>(new StreamReader(r.Content.ReadAsStream()).ReadToEnd());
-            foreach (var m in ml) {
-                if (m.id.Equals((id)))
+        [Route("/movie/{id}")]
+        public IActionResult GetMovieById(string id) 
+        {
+            var movies = MoviesClient.GetInstance().GetMovies();
+            Movie movieToReturn = null;
+            try
+            {
+                movieToReturn = logicHandler.GetSingleMovie(movies, id);
+            }
+            catch (Exception ex)
+            {
+                if(ex is ArgumentNullException)
                 {
-                    return m; //Found it!
+                    return new BadRequestObjectResult("No movie with that Id");
                 }
             }
-            return null;
+            return new OkObjectResult(movieToReturn);
         }
     }
 }
